@@ -1,0 +1,45 @@
+<%= form_for(@incident_report) do |f| %>
+  <% if @incident_report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@incident_report.errors.count, "error") %> prohibited this incident_report from being saved:</h2>
+
+      <ul>
+      <% @incident_report.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :incident_occurred_at %><br />
+    <%= f.text_field :incident_occurred_at %>
+  </div>
+  <div class="field">
+    <%= f.label :incident_location %><br />
+    <%= f.text_field :incident_location %>
+  </div>
+  <div class="field">
+    <%= f.label :incident_description %><br />
+    <%= f.text_area :incident_description %>
+  </div>
+  <div class="field">
+    <%= f.label :incident_location_description %><br />
+    <%= f.text_area :incident_location_description %>
+  </div>
+  <div class="field">
+    <%= f.label :other_party_is_tns_employee %><br />
+    <%= f.check_box :other_party_is_tns_employee %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

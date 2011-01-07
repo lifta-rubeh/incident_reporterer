@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  phone: MyString
+  incident_occurred_at: 2011-01-05 17:32:29
+  incident_location: MyString
+  incident_description: MyText
+  incident_location_description: MyText
+  other_party_is_tns_employee: false
+
+two:
+  name: MyString
+  phone: MyString
+  incident_occurred_at: 2011-01-05 17:32:29
+  incident_location: MyString
+  incident_description: MyText
+  incident_location_description: MyText
+  other_party_is_tns_employee: false

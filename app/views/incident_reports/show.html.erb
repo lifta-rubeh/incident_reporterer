@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @incident_report.name %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @incident_report.phone %>
+</p>
+
+<p>
+  <b>Incident occurred at:</b>
+  <%= @incident_report.incident_occurred_at.strftime("%-m-%-d-%Y") rescue nil %>
+</p>
+
+<p>
+  <b>Incident location:</b>
+  <%= @incident_report.incident_location %>
+</p>
+
+<p>
+  <b>Incident description:</b>
+  <%= @incident_report.incident_description %>
+</p>
+
+<p>
+  <b>Incident location description:</b>
+  <%= @incident_report.incident_location_description %>
+</p>
+
+<p>
+  <b>Other party is tns employee:</b>
+  <%= @incident_report.other_party_is_tns_employee %>
+</p>
+
+
+<%= link_to 'Edit', edit_incident_report_path(@incident_report) %> |
+<%= link_to 'Back', incident_reports_path %>
