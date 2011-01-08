@@ -1,5 +1,6 @@
 <h1>Listing incident_reports</h1>
 
+<div class="clean-table">
 <table>
   <tr>
     <th>Name</th>
@@ -28,8 +29,9 @@
     <td><%= link_to 'Destroy', incident_report, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
-</table>
 
+</table>
+</div>
 <br />
 
 <%= link_to 'New Incident report', new_incident_report_path %>
